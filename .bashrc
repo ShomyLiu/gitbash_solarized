@@ -36,7 +36,8 @@ cwdcolor='[0;34m'
 host_name='[1;31m'
 user_color
 PROMPT_COMMAND='settitle; get_hostname; history -a;'
-export PS1='\n\[\e${cwdcolor}\][$PWD]\n\[\e${usercolor}\][\u]\[\e${host_name}\][${SHORTNAME}]\[\e${inputcolor}\] $ '
+# export PS1='\n\[\e${cwdcolor}\][$PWD]\[\e${usercolor}\][\u]\[\e${host_name}\][${SHORTNAME}]\[\e${inputcolor}\]\n\W$ '
+export PS1='\[\e${usercolor}\][\u]\[\e${host_name}\][\W]\[\e${inputcolor}\] $ '
 
 # Aliases
 alias ls='ls -l --color'
